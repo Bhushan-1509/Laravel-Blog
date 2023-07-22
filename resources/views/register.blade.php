@@ -4,12 +4,15 @@
 @section('body')
 
     <x-navbar/>
-    <div class="container w-50 border mt-3 rounded">
+    <div class="container text-center mt-2">
+        <x-forms.alert-box class="{{$class}}" msg="{{$msg}}"/>
+    </div>
+    <div class="container w-50 border mt-3 h-50 rounded">
         <div class="container text-center">
             <h2 class="display-6 mt-1">Register !</h2>
         </div>
 
-        <div class="mx-1 mt-4 h-75">
+        <div class="mx-1 mt-4">
             <form class="mb-6" method="post" action="/register">
                 @csrf
                 <div class="mb-4">
@@ -35,7 +38,7 @@
             </form>
         </div>
     </div>
-    {{--    <x-footer/>--}}
+        <x-footer/>
 @endsection
 
 {{--@section('footer')--}}

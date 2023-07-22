@@ -10,7 +10,7 @@
 
 @extends('base')
 
-@section('title','welcome User !')
+@section('title','Welcome User !')
 @section('body')
     <x-navbar-lgbtn/><br>
   @if($noOfPosts)
@@ -24,16 +24,21 @@
               <p>{{ $post->content }}</p>
           </div>
       @endforeach
+      <div class="container mb-6">
+          <a href="/addpost" class="btn btn-primary mb-5">Add more</a>
+      </div>
   @else
       <div class="container">
           <h3 class="display-6 text-center">No Posts here !</h3>
       </div>
       <br>
+      <div class="container mb-6">
+          <a href="/addpost" class="btn btn-primary mb-5">Add</a>
+      </div>
   @endif
-    <div class="container">
-        <a href="/addpost" class="btn btn-primary">Add more</a>
-    </div>
 
-@endsection
+
 <x-footer/>
+@endsection
+
 

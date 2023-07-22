@@ -17,7 +17,7 @@
                         Posts
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">See posts</a></li>
+                        <li><a class="dropdown-item" href="#">My posts</a></li>
                         <li><a class="dropdown-item" href="#">Add post</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>

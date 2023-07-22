@@ -8,6 +8,7 @@
     @section('stylesheets')
     @show
     @section('favicon')
+        <link rel="shortcut icon" href="https://instagram.com/favicon.ico" type="image/x-icon">
     @show
 </head>
 <body>
@@ -15,6 +16,7 @@
     @show
 
     @section('footer')
+        <x-footer/>
     @show
 
     @section('scripts')

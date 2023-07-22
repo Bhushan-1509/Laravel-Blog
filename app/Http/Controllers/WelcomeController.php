@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class WelcomeController extends Controller
 {
     public function checkSessionValidity(Request $request){
-        if(!$request->session()->get('uid')){
+        if(!$request->session()->has('uid')){
             //...
             return redirect('/login');
         }

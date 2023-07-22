@@ -2,6 +2,9 @@
 @section('title','Laravel-blog - Login')
 @section('body')
     <x-navbar/>
+    <div class="container text-center w-50 mt-2">
+        <x-forms.alert-box class="{{$class}}" msg="{{$msg}}"/>
+    </div>
     <div class="container w-50 border mt-3 rounded">
         <div class="container text-center">
             <h2 class="display-6 mt-2">Login !</h2>
@@ -44,7 +47,7 @@
             </div>
         </div>
     </div></div>
-
+    <x-footer/>
 @endsection
 {{--@section('footer')--}}
 {{--    <x-footer/>--}}

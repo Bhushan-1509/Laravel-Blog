@@ -14,6 +14,9 @@ $profilePhoto = $user->profile_image_path;
 
     <x-navbar-lgbtn/>
     <hr>
+    <div class="container mt-2 mb-3">
+        <x-forms.alert-box class="{{$class}}" msg="{{$msg}}"/>
+    </div>
     <div class="container border-1 h-50 w-50">
         <img src="{{url($profilePhoto)}}" class="rounded-circle object-fit-cover border"  style="width:20%;height:20%;" alt="...">
         <b><h3 class="display-6" style="font-size:2rem;display:inline-block;">{{$user->first_name}} {{$user->last_name}} </h3></b>
